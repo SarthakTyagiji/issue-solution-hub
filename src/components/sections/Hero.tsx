@@ -50,13 +50,13 @@ const HeroSection = () => {
             Your One-Stop Solution for Business Success
           </h1>
 
-          {/* Rotating services */}
-          <div className="h-12 sm:h-16 mb-6 overflow-hidden">
+          {/* Rotating services - Increased height to avoid cutoff */}
+          <div className="h-16 sm:h-20 mb-8 overflow-hidden flex items-center justify-center">
             {services.map((service, index) => (
               <p
                 key={service}
                 className={cn(
-                  "text-xl sm:text-3xl font-medium text-white/90 transition-all duration-500 ease-in-out",
+                  "text-2xl sm:text-3xl font-medium text-white/90 transition-all duration-500 ease-in-out absolute",
                   currentService === index 
                     ? "opacity-100 transform-none" 
                     : "opacity-0 translate-y-8"
@@ -70,14 +70,14 @@ const HeroSection = () => {
           {/* Description */}
           <p 
             className={cn(
-              "text-lg text-white/80 mb-8 max-w-2xl mx-auto opacity-0 transform -translate-y-4",
+              "text-lg text-white/80 mb-10 max-w-2xl mx-auto opacity-0 transform -translate-y-4",
               isVisible && "opacity-100 translate-y-0 transition-all duration-700 ease-out-expo delay-200"
             )}
           >
             Comprehensive solutions across development, legal consultancy, and digital marketing to help your business thrive in today's competitive landscape.
           </p>
 
-          {/* CTA Buttons */}
+          {/* CTA Buttons - Improved visibility with stronger contrast */}
           <div 
             className={cn(
               "flex flex-col sm:flex-row justify-center gap-4 opacity-0 transform -translate-y-4",
@@ -87,7 +87,7 @@ const HeroSection = () => {
             <Button 
               asChild
               size="lg" 
-              className="font-medium text-white bg-white/20 backdrop-blur-sm hover:bg-white/30 border border-white/10"
+              className="font-medium text-white bg-white/30 backdrop-blur-sm hover:bg-white/40 border border-white/20 shadow-lg"
             >
               <Link to="/contact">
                 Get Started
@@ -98,7 +98,7 @@ const HeroSection = () => {
               asChild
               variant="outline" 
               size="lg" 
-              className="font-medium text-white bg-transparent border-white/20 hover:bg-white/10"
+              className="font-medium text-white bg-transparent border-white/30 hover:bg-white/20 shadow-lg"
             >
               <Link to="#services">
                 Explore Services
