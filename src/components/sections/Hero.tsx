@@ -98,7 +98,7 @@ const HeroSection = () => {
               asChild
               variant="outline" 
               size="lg" 
-              className="font-medium text-white bg-transparent border-white/30 hover:bg-white/20 shadow-lg"
+              className="font-medium text-white bg-brand-blue hover:bg-brand-lightBlue border border-white/20 shadow-lg"
             >
               <Link to="#services">
                 Explore Services
