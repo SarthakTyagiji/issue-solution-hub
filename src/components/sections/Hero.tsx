@@ -33,6 +33,14 @@ const HeroSection = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const handleServicesClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const servicesSection = document.getElementById('services');
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="hero-gradient relative min-h-[90vh] flex items-center justify-center overflow-hidden">
       {/* Background pattern overlay */}
@@ -95,14 +103,12 @@ const HeroSection = () => {
               </Link>
             </Button>
             <Button 
-              asChild
               variant="outline" 
               size="lg" 
               className="font-medium text-white bg-brand-blue hover:bg-brand-lightBlue border border-white/20 shadow-lg"
+              onClick={handleServicesClick}
             >
-              <Link to="#services">
-                Explore Services
-              </Link>
+              Explore Services
             </Button>
           </div>
         </div>
