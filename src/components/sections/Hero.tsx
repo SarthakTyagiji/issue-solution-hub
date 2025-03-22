@@ -87,7 +87,7 @@ const HeroSection = () => {
             <Button 
               asChild
               size="lg" 
-              className="font-medium text-white bg-white/30 backdrop-blur-sm hover:bg-white/40 border border-white/20 shadow-lg"
+              className="font-medium text-white bg-brand-blue hover:bg-brand-lightBlue border border-white/20 shadow-lg"
             >
               <Link to="/contact">
                 Get Started
