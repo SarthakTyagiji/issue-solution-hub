@@ -4,7 +4,7 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
 import { SectionHeader } from '@/components/ui/section-header';
-import { WhatsApp } from 'lucide-react';
+import { MessageSquare } from 'lucide-react';
 
 const PremiumToolsPage = () => {
   useEffect(() => {
@@ -48,7 +48,7 @@ const PremiumToolsPage = () => {
                 className="bg-green-600 hover:bg-green-700 text-white rounded-full px-8 py-6 text-lg flex items-center"
               >
                 <a href="http://wa.link/4vlhk6" target="_blank" rel="noopener noreferrer">
-                  <WhatsApp className="mr-2" />
+                  <MessageSquare className="mr-2" />
                   Contact on WhatsApp
                 </a>
               </Button>
@@ -105,7 +105,7 @@ const PremiumToolsPage = () => {
                 className="bg-green-600 hover:bg-green-700 text-white rounded-full px-8 py-6 text-lg flex items-center mx-auto"
               >
                 <a href="http://wa.link/4vlhk6" target="_blank" rel="noopener noreferrer">
-                  <WhatsApp className="mr-2" />
+                  <MessageSquare className="mr-2" />
                   Get Premium Access Now
                 </a>
               </Button>
@@ -156,7 +156,7 @@ const PremiumToolsPage = () => {
                   className="bg-green-600 hover:bg-green-700 text-white rounded-full px-8 py-6 text-lg flex items-center mx-auto"
                 >
                   <a href="http://wa.link/4vlhk6" target="_blank" rel="noopener noreferrer">
-                    <WhatsApp className="mr-2" />
+                    <MessageSquare className="mr-2" />
                     Chat With Us Now
                   </a>
                 </Button>
