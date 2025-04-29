@@ -71,7 +71,7 @@ const Navbar = () => {
               key={link.path}
               to={link.path}
               className={cn(
-                'navbar-link',
+                'navbar-link hover:text-white',
                 location.pathname === link.path && 'active'
               )}
             >
@@ -110,7 +110,7 @@ const Navbar = () => {
               key={link.path}
               to={link.path}
               className={cn(
-                'text-lg font-medium',
+                'text-lg font-medium hover:text-white',
                 location.pathname === link.path ? 'text-brand-blue font-semibold' : 'text-foreground/80'
               )}
             >

@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
@@ -114,12 +113,12 @@
   }
 
   .navbar-link {
-    @apply relative text-foreground/80 hover:text-foreground transition-colors duration-200 px-1 py-2;
+    @apply relative text-foreground/80 hover:text-white transition-colors duration-200 px-1 py-2;
   }
   
   .navbar-link::after {
     content: '';
-    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-brand-blue transition-all duration-300 ease-out-expo;
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 ease-out-expo;
   }
   
   .navbar-link:hover::after {
@@ -131,7 +130,7 @@
   }
   
   .navbar-link.active::after {
-    @apply w-full;
+    @apply w-full bg-brand-blue;
   }
 
   .section-heading {
