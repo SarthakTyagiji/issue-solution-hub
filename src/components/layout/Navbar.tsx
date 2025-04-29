@@ -15,6 +15,7 @@ const navLinks: NavLink[] = [
   { name: 'Development & Security', path: '/development' },
   { name: 'Legal & Consultancy', path: '/legal' },
   { name: 'Digital & Marketing', path: '/marketing' },
+  { name: 'Premium Tools', path: '/premium-tools' },
   { name: 'Contact', path: '/contact' },
 ];
 

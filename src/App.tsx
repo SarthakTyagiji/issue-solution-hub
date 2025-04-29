@@ -12,6 +12,7 @@ import Development from "./pages/Development";
 import Legal from "./pages/Legal";
 import Marketing from "./pages/Marketing";
 import Contact from "./pages/Contact";
+import PremiumTools from "./pages/PremiumTools";
 import NotFound from "./pages/NotFound";
 
 const ScrollToTop = () => {
@@ -38,6 +39,7 @@ const App = () => {
             <Route path="/development" element={<Development />} />
             <Route path="/legal" element={<Legal />} />
             <Route path="/marketing" element={<Marketing />} />
+            <Route path="/premium-tools" element={<PremiumTools />} />
             <Route path="/contact" element={<Contact />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

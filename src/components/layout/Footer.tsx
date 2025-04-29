@@ -61,6 +61,11 @@ const Footer = () => {
                   Digital Marketing
                 </Link>
               </li>
+              <li>
+                <Link to="/premium-tools" className="text-muted-foreground hover:text-brand-blue transition-colors text-sm">
+                  Premium Tools
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -107,10 +112,10 @@ const Footer = () => {
               <li className="flex items-start space-x-3">
                 <Phone size={18} className="text-brand-blue mt-0.5 flex-shrink-0" />
                 <a 
-                  href="tel:+918979553341" 
+                  href="tel:+919530623341" 
                   className="text-muted-foreground hover:text-brand-blue transition-colors text-sm"
                 >
-                  +91-8979553341
+                  +91-9530623341
                 </a>
               </li>
               <li className="flex items-start space-x-3">
