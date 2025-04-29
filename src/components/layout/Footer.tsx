@@ -119,6 +119,15 @@ const Footer = () => {
                 </a>
               </li>
               <li className="flex items-start space-x-3">
+                <Phone size={18} className="text-brand-blue mt-0.5 flex-shrink-0" />
+                <a 
+                  href="tel:+919997356146" 
+                  className="text-muted-foreground hover:text-brand-blue transition-colors text-sm"
+                >
+                  +91-9997356146
+                </a>
+              </li>
+              <li className="flex items-start space-x-3">
                 <MapPin size={18} className="text-brand-blue mt-0.5 flex-shrink-0" />
                 <span className="text-muted-foreground text-sm">
                   Birla Tower, Connaught Place, New Delhi
