@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '@/components/layout/Navbar';
@@ -7,7 +6,7 @@ import { SectionHeader } from '@/components/ui/section-header';
 import { AnimatedCard } from '@/components/ui/animated-card';
 import { Button } from '@/components/ui/button';
 import CallToAction from '@/components/sections/CallToAction';
-import { BarChart, Megaphone, PlayCircle, Smartphone, TrendingUp, Users } from 'lucide-react';
+import { BarChart, Megaphone, PlayCircle, Smartphone, TrendingUp, Users, MessageSquare } from 'lucide-react';
 
 const services = [
   {
@@ -103,6 +102,21 @@ const MarketingPage = () => {
         {/* Services Section */}
         <section className="py-20 bg-background">
           <div className="container px-4">
+            {/* WhatsApp Button */}
+            <div className="text-center mb-8">
+              <Button asChild className="bg-green-600 hover:bg-green-700 text-white">
+                <a 
+                  href="https://wa.link/y60vqk" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2"
+                >
+                  <MessageSquare className="h-5 w-5" />
+                  WhatsApp Me
+                </a>
+              </Button>
+            </div>
+
             <SectionHeader
               title="Our Digital & Marketing Services"
               subtitle="We offer a comprehensive suite of digital marketing and branding solutions to help your business stand out"
