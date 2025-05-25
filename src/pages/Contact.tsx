@@ -3,6 +3,8 @@ import { useEffect } from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import ContactSection from '@/components/sections/ContactSection';
+import { Button } from '@/components/ui/button';
+import { Calendar } from 'lucide-react';
 
 const ContactPage = () => {
   useEffect(() => {
@@ -25,6 +27,21 @@ const ContactPage = () => {
               <p className="text-white/80 text-lg md:text-xl mb-8 max-w-3xl mx-auto animate-slide-up">
                 Have questions or ready to get started? Reach out to our team today for expert assistance with your business needs.
               </p>
+              
+              {/* Calendly Button */}
+              <div className="mb-4">
+                <Button asChild size="lg" className="bg-white text-brand-blue hover:bg-white/90">
+                  <a 
+                    href="https://calendly.com/sarthaktyagi31" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2"
+                  >
+                    <Calendar className="h-5 w-5" />
+                    Schedule a Meeting
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
 
